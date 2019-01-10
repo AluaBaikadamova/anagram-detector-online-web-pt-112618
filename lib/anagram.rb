@@ -8,11 +8,13 @@ class Anagram
   end
   
   def match (array)
-    result=nil
+    result=[]
+    i=0
     array.each do |arr|
       
       if arr.split("")==@word.split("")
-        result=arr
+        result[i]=arr
+        i+=1
       end
     end
     return result
