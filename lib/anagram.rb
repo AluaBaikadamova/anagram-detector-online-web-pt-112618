@@ -12,7 +12,7 @@ class Anagram
     i=0
     array.each do |arr|
       
-      if arr.split("")==@word.split("")
+      if arr.split("").sort==@word.split("").sort
         result[i]=arr
         i+=1
       end
